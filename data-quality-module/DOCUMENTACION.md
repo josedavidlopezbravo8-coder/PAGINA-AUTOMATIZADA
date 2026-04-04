@@ -4,7 +4,7 @@
 
 > Como administrador, quiero consultar los errores de carga del inventario para identificar problemas y corregirlos.
 
----
+--- 
 
 ## Descripción General
 
