@@ -1,0 +1,6 @@
+{
+  "porcentaje_descuento_base": 0.05,
+  "porcentaje_comision": 0.1,
+  "limite_stock_minimo": 10,
+  "error_rate_threshold": 0.15
+}

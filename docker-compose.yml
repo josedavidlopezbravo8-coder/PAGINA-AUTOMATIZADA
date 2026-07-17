@@ -64,8 +64,17 @@ services:
       CONFIG_MODULE_URL:     ${CONFIG_MODULE_URL}
     depends_on:
       - data-quality-module
-      - catalog-service
       - config-module
+    networks:
+      - ebook-network
+    restart: on-failure
+
+  config-module:
+    build:
+      context: ./config-module
+      dockerfile: Dockerfile
+    ports:
+      - "8008:8008"
     networks:
       - ebook-network
     restart: on-failure
